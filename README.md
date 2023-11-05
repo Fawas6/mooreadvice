@@ -64,3 +64,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Mooreadvice created by Adeoye Fawas
+A platform for a company's admin to create tasks.
+
+# Getting started
+
+## Setting-up development environment
+### Step 1. Clone the repo && install the packages in the composer.json file
+```
+$ git clone https://github.com/Fawas6/mooreadvice.git
+$ composer install
+```
+### Step 2. Create a .env file in the root folder
+Then copy and paste the content from .env.example file into the .env file
+
+### Step 3. Create application encryption key if it doesn't exist in the .env file
+```
+$ php artisan key:generate
+```
+### Step 4. Set your local database in the .env
+Replace the **DB_DATABASE**, **DB_USERNAME** and **DB_PASSWORD** with your connection details
+
+### Step 5. Set your database data
+This can be done by either requesting for the **database.sql** file for existing data or by running the following command for fresh data
+```
+$ php artisan migrate
+```
+### Step 6. Start development server
+```
+$ php artisan serve
+```
